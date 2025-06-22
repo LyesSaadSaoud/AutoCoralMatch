@@ -104,10 +104,10 @@
     <div class="hero-body has-text-centered">
       <img src="static/images/main_figure.png" alt="AutoCoralMatch system illustration" style="width: 70%; border-radius: 10px;">
       <h2 class="subtitle">
-        \textbf{Overview of the AutoCoralMatch system.} A modular, offline desktop application for coral health assessment using CoralWatch cards.
-        \textbf{Left:} The user interface includes upload, dehazing, card detection, segmentation, rectification, coral-only extraction, and report generation (CSV/PDF). A built-in annotation tool enables patch-level labeling.
-        \textbf{Middle:} Intermediate outputs from each pipeline stage, including isolated CoralWatch cards, the margin region, and coral-only imagery.
-        \textbf{Right:} Key computational steps: (1) RAUNE-Net dehazing, (2) Grounding DINO detection, (3) SAM2 segmentation, (4) perspective rectification, (5) \textbf{YOLOv8} patch detection, (6) \textbf{HSV extraction}, (7) \textbf{HSV-based} health estimation, and (8) structured output.
+        Figure 1: Overview of the AutoCoralMatch system. A modular, offline desktop application for coral health assessment using CoralWatch cards.
+        Left:} The user interface includes upload, dehazing, card detection, segmentation, rectification, coral-only extraction, and report generation (CSV/PDF). A built-in annotation tool enables patch-level labeling.
+        Middle: Intermediate outputs from each pipeline stage, including isolated CoralWatch cards, the margin region, and coral-only imagery.
+        Right: Key computational steps: (1) RAUNE-Net dehazing, (2) Grounding DINO detection, (3) SAM2 segmentation, (4) perspective rectification, (5) \textbf{YOLOv8} patch detection, (6) \textbf{HSV extraction}, (7) \textbf{HSV-based} health estimation, and (8) structured output.
         All components are GPU-accelerated, locally executable, and modularly designed.
       </h2>
     </div>
@@ -180,7 +180,7 @@
         <div class="columns is-centered">
             <div class="column is-half has-text-centered video-container">
                 <video controls>
-                    <source src="static/videos/video1.mp4" type="video/mp4">
+                    <source src="static/videos/video2_compressed.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>Figure X: Demonstration of the AutoCoralMatch Desktop Application (Main Processing Pipeline).</p>
@@ -188,7 +188,7 @@
 
             <div class="column is-half has-text-centered video-container">
                 <video controls>
-                    <source src="static/videos/video22.mp4" type="video/mp4">
+                    <source src="static/videos/video2_compressed.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <p>Figure Y: Demonstration of the CoralWatch Chart Annotation Tool (Data Preparation & Training).</p>
@@ -197,48 +197,7 @@
     </div>
 </section>
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
 
-                <div class="item">
-          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/Prop_dataset_synthetic.png" alt="Proposed dataset synthetic examples" style="max-width: 80%; height: auto; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered">
-              <strong>Figure 5:</strong> Comparison of selected ground-truth (GT) coral images (top rows) and their corresponding synthetic hazy counterparts (bottom rows) from the proposed dataset.
-            </h2>
-          </div>
-        </div>
-
-                <div class="item">
-          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/GPT-detection.png" alt="GPT-4o and Manual Coral Classification" style="max-width: 80%; height: auto; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered">
-              <strong>Figure 6:</strong> Comparison of GPT-4o and Manual Coral Classification.             </h2>
-          </div>
-        </div>
-
-                <div class="item">
-          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/Fig5.png" alt="Impact of haze and dehazing models on coral detection quality" style="max-width: 80%; height: auto; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered">
-              <strong>Figure 5:</strong> Impact of haze and dehazing models on coral detection quality. The first raw represents the ground truth (GT), followed by the hazy input images. The remaining columns show the results after applying different dehazing models. This comparison highlights the variation in detection quality depending on the enhancement method used.             </h2>
-          </div>
-        </div>
-
-                <div class="item">
-          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/Fig6.png" alt="Visualization of input images, segmentation masks, and overlay results" style="max-width: 80%; height: auto; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered">
-              <strong>Figure 6:</strong> Visualization of input images, segmentation masks, and overlay results. The first row represents the original input images, the second row shows the corresponding segmentation masks, and the third row presents the overlay of the masks on the original images.
-            </h2>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
