@@ -114,64 +114,7 @@
   </div>
 </section>
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Abstract</h2>
-    <div class="content has-text-justified">
-      <p>Coral reefs are highly sensitive indicators of climate change, making accurate and scalable monitoring tools critical for global conservation. Traditional CoralWatch-based assessments rely on manual diver observations and post-hoc color matching, which are labor-intensive, subjective, and difficult to scale.</p>
-      <p>We present AutoCoralMatch, an open-source, modular software framework for automated coral health assessment from underwater imagery. The system integrates underwater image dehazing (RAUNE-Net), CoralWatch card detection using foundation vision models (Grounding DINO and SAM2), perspective rectification, patch-level color extraction, and health classification based on \textbf{perceptual color metrics in HSV space}. The software includes a user-friendly desktop interface supporting batch processing, real-time feedback, report generation, and structured metadata logging.</p>
-      <p>To validate system performance, we conducted controlled marine trials with over 20 coral morphologies under varying lighting and turbidity. Results demonstrate robust card detection, geometric alignment, and consistent patch scoring across conditions. The platform reduces human bias, eliminates the need for diver-based annotation, and enables repeatable, low-cost, and AI-assisted reef monitoring workflows.</p>
-      <p>AutoCoralMatch addresses key needs in environmental modeling and software: transparent algorithmic design, generalizability across reef environments, and reproducibility through publicly available code, pretrained models, and datasets. It supports long-term coral health modeling and can be integrated into decision-support systems for marine conservation.</p>
-    </div>
-  </div>
-</section>
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Before and After Dehazing (RAUNE-Net)</h2>
-    <div class="columns is-multiline">
-            <div class="column">
-        <div class="slider-container">
-          <div class="juxtapose uniform-slider" data-startingposition="50%">
-            <img src="static/images/before1.jpg" alt="Before Dehazing" data-label="Before">
-            <img src="static/images/after11.jpg" alt="After Dehazing" data-label="After">
-          </div>
-        </div>
-      </div>
-
-            <div class="column">
-        <div class="slider-container">
-          <div class="juxtapose uniform-slider" data-startingposition="50%">
-            <img src="static/images/before2.jpg" alt="Before Dehazing" data-label="Before">
-            <img src="static/images/after22.jpg" alt="After Dehazing" data-label="After">
-          </div>
-        </div>
-      </div>
-
-            <div class="column">
-        <div class="slider-container">
-          <div class="juxtapose uniform-slider" data-startingposition="50%">
-            <img src="static/images/before3.jpg" alt="Before Dehazing" data-label="Before">
-            <img src="static/images/after33.jpg" alt="After Dehazing" data-label="After">
-          </div>
-        </div>
-      </div>
-
-            <div class="column">
-        <div class="slider-container">
-          <div class="juxtapose uniform-slider" data-startingposition="50%">
-            <img src="static/images/before4.jpg" alt="Before Dehazing" data-label="Before">
-            <img src="static/images/after44.jpg" alt="After Dehazing" data-label="After">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
 
 
 <section class="section hero is-light">
@@ -183,7 +126,7 @@
                     <source src="static/videos/video2_compressed.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>Figure X: Demonstration of the AutoCoralMatch Desktop Application (Main Processing Pipeline).</p>
+                <p>Figure 2: Demonstration of the AutoCoralMatch Desktop Application (Main Processing Pipeline).</p>
             </div>
 
             <div class="column is-half has-text-centered video-container">
@@ -191,12 +134,24 @@
                     <source src="static/videos/video2_compressed.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>Figure Y: Demonstration of the CoralWatch Chart Annotation Tool (Data Preparation & Training).</p>
+                <p>Figure 3: Demonstration of the CoralWatch Chart Annotation Tool (Data Preparation & Training).</p>
             </div>
         </div>
     </div>
 </section>
 
+
+    <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>Coral reefs are highly sensitive indicators of climate change, making accurate and scalable monitoring tools critical for global conservation. Traditional CoralWatch-based assessments rely on manual diver observations and post-hoc color matching, which are labor-intensive, subjective, and difficult to scale.</p>
+      <p>We present AutoCoralMatch, an open-source, modular software framework for automated coral health assessment from underwater imagery. The system integrates underwater image dehazing (RAUNE-Net), CoralWatch card detection using foundation vision models (Grounding DINO and SAM2), perspective rectification, patch-level color extraction, and health classification based on \textbf{perceptual color metrics in HSV space}. The software includes a user-friendly desktop interface supporting batch processing, real-time feedback, report generation, and structured metadata logging.</p>
+      <p>To validate system performance, we conducted controlled marine trials with over 20 coral morphologies under varying lighting and turbidity. Results demonstrate robust card detection, geometric alignment, and consistent patch scoring across conditions. The platform reduces human bias, eliminates the need for diver-based annotation, and enables repeatable, low-cost, and AI-assisted reef monitoring workflows.</p>
+      <p>AutoCoralMatch addresses key needs in environmental modeling and software: transparent algorithmic design, generalizability across reef environments, and reproducibility through publicly available code, pretrained models, and datasets. It supports long-term coral health modeling and can be integrated into decision-support systems for marine conservation.</p>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -204,7 +159,7 @@
     <pre><code>
 @article{AI-CoralWatch,
   author = {Saad Saoud, Lyes et al.},
-  title = {AI-Powered Coral Watch: Pattern Recognition for Automated Bleaching Detection},
+  title = {AutoCoralMatch: An Open-Source Foundation Model-Driven Framework for Patch-Level Coral Health Assessment and Automated Bleaching Detection},
   year = {2025},
   publisher = {Preprint},
   doi = {......},
