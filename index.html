@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="AI-Powered Coral Watch-based Underwater Robotic System for Coral Monitoring, Pattern Recognition, and Automated Bleaching Detection">
+  <meta property="og:title" content="AI-Powered Coral Watch-based Underwater Robotic System for Coral Monitoring, Pattern Recognition, and Automated Bleaching Detection"/>
+  <meta property="og:description" content="AI-Powered Coral Watch-based Underwater Robotic System for Coral Monitoring, Pattern Recognition, and Automated Bleaching Detection."/>
+  <meta property="og:image" content="static/images/GFN (1).png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AI-Powered Coral Watch-based Underwater Robotic System for Coral Monitoring, Pattern Recognition, and Automated Bleaching Detection</title>
+  <link rel="icon" type="image/x-icon" href="static/images/78357759.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <!-- Bulma CSS & Other Styles -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+
+  <style>
+    /* Prevents unwanted word wrapping on section titles */
+    h2.title {
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      word-break: normal;
+      overflow-wrap: break-word;
+    }
+
+    /* Ensures paragraphs do not break into vertical letters */
+    .content p {
+      text-align: justify;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Ensures titles and text stay in a horizontal layout */
+    .column {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Limits container width to prevent excessive wrapping */
+    .container.is-max-desktop {
+      max-width: 1100px;
+    }
+
+    /* Carousel Styling */
+    .carousel {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Title Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h1 class="title is-1">AI-Powered Coral Watch-based Underwater Robotic System for Coral Monitoring, Pattern Recognition, and Automated Bleaching Detection</h1>
+      <p class="is-size-5">Lyes Saad Saoud and Irfan Hussain</p>
+      <p class="is-size-5">Khalifa University of Science and Technology, UAE | Preprint 2025</p>
+
+      <div class="buttons is-centered">
+        <a href="https://arxiv.org/pdf/<ARXIV_PAPER_ID>.pdf" class="button is-dark is-rounded">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+        </a>
+        <a href="https://github.com/LyesSaadSaoud/AI-CoralHealth" class="button is-dark is-rounded">
+          <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+        </a>
+        <a href="https://github.com/LyesSaadSaoud/AI-CoralHealth" class="button is-dark is-rounded">
+          <span class="icon"><i class="fab fa-github"></i></span><span>Datasets</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <img src="static/images/main_figure.png" alt="GFN system illustration" style="width: 70%; border-radius: 10px;">
+      <h2 class="subtitle">Comparison of manual and AI-powered coral bleaching detection.
+    The left panel illustrates the traditional diver-based Coral Watch methodology, where divers manually assess coral bleaching by visually comparing coral colors to a reference chart and recording observations on waterproof slates.
+    The right panel presents the proposed AI-driven automated framework, integrating a Remotely Operated Vehicle (ROV) equipped with deep learning and vision-language models for large-scale, objective coral monitoring. The system utilizes YOLOv12 for coral detection, SAM, for instance, segmentation, and DehazeFormer for underwater image enhancement, addressing visibility challenges in real-world conditions. 
+    To enable automated bleaching classification, the pipeline leverages GPT-4o as a Generative AI model, which interprets segmented coral regions, assigns Coral Watch classifications based on dominant colors and provides structured conservation insights. The model is validated using a dual dataset approach, combining synthetic and real-world underwater images from both controlled marine pools and open ocean environments.
+    Key advantages of this AI-powered system include real-time depth estimation, cloud-based AI processing, enhanced classification accuracy, and scalability compared to traditional methods. By integrating pattern recognition, deep learning, and generative AI, the proposed approach offers a more efficient, consistent, and scalable alternative to diver-based coral bleaching assessments, significantly improving monitoring efforts for marine conservation..</h2>
+    </div>
+  </div>
+</section>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Before and After Dehazing</h2>
+    <div class="columns is-multiline">
+      <!-- First Slider -->
+      <div class="column">
+        <div class="slider-container">
+          <div class="juxtapose uniform-slider" data-startingposition="50%">
+            <img src="static/images/before1.jpg" alt="Before Dehazing" data-label="Before">
+            <img src="static/images/after11.jpg" alt="After Dehazing" data-label="After">
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Slider -->
+      <div class="column">
+        <div class="slider-container">
+          <div class="juxtapose uniform-slider" data-startingposition="50%">
+            <img src="static/images/before2.jpg" alt="Before Dehazing" data-label="Before">
+            <img src="static/images/after22.jpg" alt="After Dehazing" data-label="After">
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Slider -->
+      <div class="column">
+        <div class="slider-container">
+          <div class="juxtapose uniform-slider" data-startingposition="50%">
+            <img src="static/images/before3.jpg" alt="Before Dehazing" data-label="Before">
+            <img src="static/images/after33.jpg" alt="After Dehazing" data-label="After">
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Slider -->
+      <div class="column">
+        <div class="slider-container">
+          <div class="juxtapose uniform-slider" data-startingposition="50%">
+            <img src="static/images/before4.jpg" alt="Before Dehazing" data-label="Before">
+            <img src="static/images/after44.jpg" alt="After Dehazing" data-label="After">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Include JuxtaposeJS Library -->
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+
+
+<style>
+  /* Define slightly smaller dimensions for each slider */
+  .slider-container {
+    width: 100%; /* Full width of its parent container */
+    max-width: 450px; /* Reduced maximum width */
+    height: 300px; /* Reduced height */
+    margin: 10px auto; /* Center each slider with spacing */
+    position: relative;
+  }
+
+  /* Ensure images fill their containers */
+  .uniform-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preserve aspect ratio and fill container */
+  }
+
+  /* Grid layout for 2x2 matrix */
+  .columns.is-multiline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center each grid item */
+  }
+
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Make labels more prominent */
+  .juxtapose .jx-label {
+    font-size: 0px; /* Adjust label size for visibility */
+  }
+</style>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <p>
+        <div class="content has-text-justified">
+          <p>
+        Coral bleaching detection is essential for marine conservation, traditionally relying on diver-based surveys using Coral Watch color charts. However, this manual process is subjective, labor-intensive, and lacks scalability. In this work, we propose an AI-powered, multi-stage framework that automates Coral Watch-based bleaching detection using deep learning, generative AI, and pattern recognition techniques.
+Our approach integrates YOLOv12 for coral detection, the Segment Anything Model (SAM) for instance segmentation, and a GPT-based vision-language model for automated color classification aligned with Coral Watch standards. To address underwater visibility challenges, we introduce a dual dataset approach, leveraging both synthetic and real-world underwater images. We trained and benchmarked state-of-the-art dehazing models, including DehazeFormer, RAUNE-Net, WaterNet, and UT-UIE, and demonstrated their effectiveness in improving coral visibility and detection accuracy.
+Furthermore, we employ Generative AI (GenAI) to enhance the automated assessment process by interpreting segmented coral regions, classifying their health status based on color distributions, and providing conservation recommendations in natural language. The impact of dehazing on coral detection was quantified using a fine-tuned YOLOv12 model, revealing significant improvements in mean Average Precision (mAP) and recall scores across different visibility conditions.
+The system was validated on datasets collected in controlled marine pools and open ocean environments, confirming its robustness for real-world deployment. Additionally, we present a comparative evaluation between AI-driven classification and manual expert assessments, demonstrating a near-perfect alignment. Our results highlight the effectiveness of deep learning, generative AI, and image processing techniques in automating large-scale coral bleaching detection, offering a scalable, objective, and efficient alternative to traditional diver-based monitoring.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="position: relative; max-width: 100%; text-align: center;">
+        <img src="static/images/Proposed_framework.png" alt="GFN system illustration" style="width: 70%; height: auto; border-radius: 10px;">
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Overview of the proposed AI-powered coral monitoring framework. The ROV captures underwater images, which are then processed using a two-stage
+AI pipeline: (1) Underwater Dehazing and Enhancement, and (2) Coral Detection and Bleaching Classification. Stage 1: Dehazing Model Selection —
+Multiple underwater dehazing models were evaluated, including Cycle-GAN, FUnIEGAN, PUGAN, RAUNE-Net, UGAN, UT-UIE, and WaterNet. The best-
+performing model, selected based on PSNR and structural similarity metrics, enhances image clarity before detection. Stage 2: Coral Detection and Segmentation
+— YOLOv12 is used for robust coral detection, while Segment Anything Model (SAM) performs precise segmentation for area computation. Stage 3: Automated
+Bleaching Assessment — GPT-4o analyzes the segmented coral regions, classifying bleaching severity based on Coral Watch standards. The final classifications
+are stored in a structured database for conservation monitoring and large-scale reef assessment
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- End teaser video -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Video 1 -->
+      <div class="column is-one-third has-text-centered">
+        <video controls width="100%">
+          <source src="static/videos/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Coral Watch based ROV.</p>
+      </div>
+
+     
+
+      <!-- Video 3 -->
+      <div class="column is-one-third has-text-centered">
+        <video controls width="100%">
+          <source src="static/videos/video22.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>The Coral Watch based ROV.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Image Carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- Image 1 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/Prop_dataset_synthetic.png" alt="Impact of haze and dehazing models on coral detection quality" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Figure 5:</strong>Comparison of selected ground-truth (GT) coral images (top rows) and their corresponding synthetic hazy counterparts (bottom rows) from the proposed dataset.
+            </h2>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/GPT-detection.png" alt="Visualization of input images, segmentation masks, and overlay results" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Figure 6:</strong> Comparison of GPT-4o and Manual Coral Classification.
+            </h2>
+          </div>
+        </div>
+
+             <!-- Image 3 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/Fig5.png" alt="Impact of haze and dehazing models on coral detection quality" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Figure 5:</strong> Impact of haze and dehazing models on coral detection quality. The first raw represents the ground truth (GT), followed by the hazy input images. The remaining columns show the results after applying different dehazing models. This comparison highlights the variation in detection quality depending on the
+enhancement method used.
+            </h2>
+          </div>
+        </div>
+
+                <!-- Image 4 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/Fig6.png" alt="Visualization of input images, segmentation masks, and overlay results" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Figure 6:</strong> Visualization of input images, segmentation masks, and overlay results. The first row represents the original input images, the second row shows the corresponding segmentation masks, and the third row presents the overlay of the masks on the original images.
+            </h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Image Carousel -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@article{AI-CoralWatch,
+  author = {Saad Saoud, Lyes et al.},
+  title = {AI-Powered Coral Watch: Pattern Recognition for Automated Bleaching Detection},
+  year = {2025},
+  publisher = {Preprint},
+  doi = {......},
+  url = {https://arxiv.org/...}}
+</code></pre>
+  </div>
+</section>
+
+
+  
+<footer class="footer">
+  <div class="container">
+    <p>This page provides supplementary materials for "<strong>AI-Powered Coral Watch: Pattern Recognition for Automated Bleaching Detection</strong>." Access the paper, dataset, and code repository for more details.</p>
+  </div>
+</footer>
+
+</body>
+</html> 
