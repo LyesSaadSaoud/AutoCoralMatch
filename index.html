@@ -121,24 +121,85 @@
     <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">System Demonstrations</h2>
         <div class="columns is-centered">
-            <div class="column is-half has-text-centered video-container">
-                <video controls loop autoplay muted>
-                    <source src="static/videos/video1_compressed.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="column is-half has-text-centered">
+                <div class="video-container">
+                    <video controls loop autoplay muted>
+                        <source src="static/videos/video1_compressed.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <p>Figure 2: Demonstration of the AutoCoralMatch Desktop Application (Main Processing Pipeline).</p>
             </div>
 
-            <div class="column is-half has-text-centered video-container">
-                <video controls loop autoplay muted>
-                    <source src="static/videos/video2_compressed.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="column is-half has-text-centered">
+                <div class="video-container">
+                    <video controls loop autoplay muted>
+                        <source src="static/videos/video2_compressed.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <p>Figure 3: Demonstration of the CoralWatch Chart Annotation Tool (Data Preparation & Training).</p>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    /* Add this updated style block to your <head> or main CSS file */
+    /* Ensures paragraphs do not break into vertical letters */
+    .content p {
+        text-align: justify;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Ensures titles and text stay in a horizontal layout */
+    .column {
+        padding: 15px;
+        display: flex; /* Use flexbox for vertical alignment */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: flex-start; /* Align content to the top within the column */
+        align-items: center; /* Center horizontally */
+    }
+
+    /* Limits container width to prevent excessive wrapping */
+    .container.is-max-desktop {
+        max-width: 1100px;
+    }
+
+    /* Carousel Styling */
+    .carousel {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* **Updated Video Container Styling** */
+    .video-container {
+        width: 100%; /* Take full width of parent column */
+        position: relative; /* Needed for absolute positioning of video */
+        padding-bottom: 56.25%; /* Force 16:9 Aspect Ratio (9 / 16 * 100%) */
+        height: 0; /* Crucial for padding-bottom trick */
+        overflow: hidden; /* Hide any overflow if object-fit: cover crops */
+        border-radius: 10px; /* Match video border-radius */
+        background-color: black; /* Background for when video is loading or if it has internal black bars */
+    }
+    .video-container video {
+        position: absolute; /* Take exact dimensions of parent container */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Fill the container, potentially cropping content to fit */
+        /* Removed border-radius from here, apply to video-container instead */
+    }
+</style>
 
     <section class="section hero is-light">
   <div class="container is-max-desktop">
